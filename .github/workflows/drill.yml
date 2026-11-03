@@ -1,0 +1,16 @@
+name: Runbook drill
+
+on:
+  workflow_dispatch:
+
+jobs:
+  quick-check:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "DRILL-LOG-MARKER-A17"
+      - run: echo "quick job done"
+
+  long-hold:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 1800
